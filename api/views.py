@@ -7,4 +7,4 @@ class TrackViewSet(viewsets.ModelViewSet):
     queryset = Track.objects.all().order_by('id')
     serializer_class = TrackSerializer
     search_fields = ['name']
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
